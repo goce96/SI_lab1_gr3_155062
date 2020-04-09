@@ -53,3 +53,14 @@ class Item {
 		//TODO
 	}
 }
+class Receipt {
+    List<Item>items;
+    public float vkupnaCena{
+        float vkuno=0;
+        for (Item i:items){
+            vkuno+=i.price;
+        }
+        return vkuno;
+    }
+
+}
